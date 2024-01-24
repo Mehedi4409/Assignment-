@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'main-color': '#FF4240',
+          }
+        }
+      }
+    }
+  </script>
+
+
+  <style>
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+
+</head>
+
+<body class="font-manrope">
+  <header class="md:container md:mx-auto ">
+    <nav class="mb-12">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a><span class="text-main-color">Home</span></a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost sm:text-lg lg:text-4xl text-black">Hockey<span class="text-main-color">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a><span class="text-main-color">Home</span></a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn  btn-ghost btn-circle mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden lg:block" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+          <a class="btn bg-main-color sm:text-lg lg:text-xl text-white ">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="md:container md:mx-auto">
+    <!-- banner section -->
+    <section>
+      <div class="carousel w-full mb-24">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/extra4.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/extra2.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="Images/extra3.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hockey club section -->
+    <section>
+      <div>
+        <hr style="border-top: dashed 1px;" class="mb-8" />
+        <h1 class="font-manrope text-black text-2xl lg:text-4xl text-center mb-4 lg:mb-6">Professional Hockeys Club</h1>
+        <h3 class="font-manrope text-sm lg:text-base text-center mb-12">Precision on the field, sticks dancing in
+          rhythm, our field hockey <br> club thrives on teamwork and excellence.</h3>
+
+      </div>
+    </section>
+    <!-- hockey club progress section -->
+    <section>
+      <div class="flex flex-col md:flex-row ">
+        <div class="flex flex-col items-center justify-center mb-6">
+          <div class="radial-progress text-orange-600 mb-6"
+            style="--value:87; --size:8rem; lg:--size:12rem;  --thickness: 12px;" role="progressbar">87%</div>
+          <h2 class="text-center text-xl mb-4">Prayer Facility</h2>
+          <h3 class="text-center text-base">A state-of-the-art facility where our players hone their skills and forge a
+            united team spirit</h3>
+        </div>
+        <div class="flex flex-col items-center justify-center mb-6">
+          <div class="radial-progress text-lime-600 mb-6"
+            style="--value:95; --size:8rem; lg:--size:12rem;  --thickness: 12px;" role="progressbar">95%</div>
+          <h2 class="text-center text-xl mb-4">Experienced Coach</h2>
+          <h3 class="text-center text-base">Guiding with wisdom and strategy, our coach shapes champions and <br>
+            fosters a culture of continuous improvement</h3>
+        </div>
+        <div class="flex flex-col items-center justify-center mb-6">
+          <div class="radial-progress text-cyan-600 mb-6"
+            style="--value:80; --size:8rem; lg:--size:12rem;  --thickness: 12px;" role="progressbar">80%</div>
+          <h2 class="text-center text-xl mb-4">Senior Player</h2>
+          <h3 class="text-center text-base">A seasoned athlete, bringing leadership, skill, and dedication to elevate
+            our hockey club's performance.</h3>
+        </div>
+        <div class="flex flex-col items-center justify-center mb-6">
+          <div class="radial-progress text-rose-600 mb-6"
+            style="--value:90; --size:8rem; lg:--size:12rem; --thickness: 12px;" role="progressbar">90%</div>
+          <h2 class="text-center text-xl mb-4">Training Ground</h2>
+          <h3 class="text-center text-base"> A state-of-the-art facility where our players hone their skills and forge a
+            united team spirit.</h3>
+        </div>
+
+      </div>
+
+      <hr style="border-top: dashed 1px;" class="mt-8" />
+
+    </section>
+    <!--program section -->
+    <section>
+      <section>
+        <div>
+          <h1 class="font-manrope text-black text-2xl lg:text-4xl text-center mb-4 mt-9 lg:mb-6">Program Sections</h1>
+          <h3 class="font-manrope text-sm lg:text-base text-center mb-12">Precision on the field, sticks dancing in
+            rhythm, our field hockey <br> club thrives on teamwork and excellence.</h3>
+
+        </div>
+      </section>
+      <!-- program section 2 -->
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-24">
+        <div class="card bg-base-100 shadow-xl image-full">
+          <figure><img src="Images/2.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-white text-xl md:text-3xl">Junior Program</h2>
+            <p class="text-white text-sm md:text-base">Join the thrill at [Hockey Club Name]'s Junior Hockey Program,
+              where we prioritize skill development, teamwork, and sportsmanship in age-tailored sessions, offering
+              opportunities for local tournaments and off-ice conditioning to shape well-rounded, passionate young
+              athletes.</p>
+            <div class="card-actions">
+              <button class="btn bg-main-color">Register Now!</button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl image-full">
+          <figure><img src="Images/3.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-white text-xl md:text-3xl">Teenager Program</h2>
+            <p class="text-white text-sm md:text-base">Elevate your game with [Hockey Club Name]'s Teen Hockey Program!
+              Tailored for teenagers, our program emphasizes skill enhancement, teamwork, and sportsmanship, providing
+              opportunities for local tournaments and targeted off-ice conditioning. Join us for a dynamic and rewarding
+              hockey experience!</p>
+            <div class="card-actions ">
+              <button class="btn bg-main-color">Register Now!</button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl image-full md:col-span-2">
+          <figure><img src="Images/4.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title text-white text-xl md:text-3xl">Professional Program</h2>
+            <p class="text-white text-sm md:text-base">Elevate your game with [Hockey Club Name]'s Pro Hockey Program!
+              Tailored for aspiring professionals, we focus on refining elite-level skills, strategic play, and
+              performance. With high-level coaching, exclusive competitions, and rigorous off-ice conditioning, join us
+              on the path to hockey excellence!</p>
+            <div class="card-actions ">
+              <button class="btn bg-main-color">Register Now!</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- product section -->
+      <section>
+        <div>
+          <h1 class="font-manrope text-black text-2xl lg:text-4xl text-center mb-4 lg:mb-6">Our New Products</h1>
+          <h3 class="font-manrope text-sm lg:text-base text-center mb-12">Precision on the field, sticks dancing in
+            rhythm, our field hockey <br> club thrives on teamwork and excellence.</h3>
+          <hr style="border-top: dashed 1px;" class="mt-8 mb-12" />
+      </section>
+
+      <!-- product section 2 -->
+      <section>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- item 1 -->
+        <div class="card flex flex-col md:flex-row items-center text-center border-slate-500">
+          <div class="mb-3">
+            <figure class="px-10 py-10">
+              <img src="Images/5.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+          </div>
+          <div class="items-start text-start p-4">
+            <div class="flex">
+              <img src="Images/star-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4">5.0</p>
+              <img src="Images/eye-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4">20</p>
+              <img src="Images/heart-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4 mb-3">200</p>
+
+            </div>
+            <div class="items-start text-start mb-3">
+              <h2 class="card-title mb-3">World Cup Flags Football</h2>
+              <p class="mb-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 mb-3">
+              <p class="text-main-color font-extrabold">Price - $22.00</p>
+              <div class="flex gap-3"><img src="Images/cart-shopping-svgrepo-com.svg" alt="" class="w-6 h-6">
+              <p>Delivery Fee : Free</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div class="card flex flex-col md:flex-row items-center text-center border-slate-500">
+          <div class="mb-3">
+            <figure class="px-10 py-10">
+              <img src="Images/6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+          </div>
+          <div class="items-start text-start p-4">
+            <div class="flex">
+              <img src="Images/star-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4">5.0</p>
+              <img src="Images/eye-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4">20</p>
+              <img src="Images/heart-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4 mb-3">200</p>
+
+            </div>
+            <div class="items-start text-start mb-3">
+              <h2 class="card-title mb-3">World Cup Flags Football</h2>
+              <p class="mb-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 mb-3">
+              <p class="text-main-color font-extrabold">Price - $22.00</p>
+              <div class="flex gap-3"><img src="Images/cart-shopping-svgrepo-com.svg" alt="" class="w-6 h-6">
+              <p>Delivery Fee : Free</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- item 3 -->
+        <div class="card flex flex-col md:flex-row items-center text-center border-slate-500">
+          <div class="mb-3">
+            <figure class="px-10 py-10">
+              <img src="Images/7.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+          </div>
+          <div class="items-start text-start p-4">
+            <div class="flex">
+              <img src="Images/star-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4">5.0</p>
+              <img src="Images/eye-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4">20</p>
+              <img src="Images/heart-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4 mb-3">200</p>
+
+            </div>
+            <div class="items-start text-start mb-3">
+              <h2 class="card-title mb-3">World Cup Flags Football</h2>
+              <p class="mb-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 mb-3">
+              <p class="text-main-color font-extrabold">Price - $22.00</p>
+              <div class="flex gap-3"><img src="Images/cart-shopping-svgrepo-com.svg" alt="" class="w-6 h-6">
+              <p>Delivery Fee : Free</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- item 4 -->
+        <div class="card flex flex-col md:flex-row items-center text-center border-slate-500">
+          <div class="mb-3">
+            <figure class="px-10 py-10">
+              <img src="Images/8.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+          </div>
+          <div class="items-start text-start p-4">
+            <div class="flex">
+              <img src="Images/star-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4">5.0</p>
+              <img src="Images/eye-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4">20</p>
+              <img src="Images/heart-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4 mb-3">200</p>
+
+            </div>
+            <div class="items-start text-start mb-3">
+              <h2 class="card-title mb-3">World Cup Flags Football</h2>
+              <p class="mb-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 mb-3">
+              <p class="text-main-color font-extrabold">Price - $22.00</p>
+              <div class="flex gap-3"><img src="Images/cart-shopping-svgrepo-com.svg" alt="" class="w-6 h-6">
+              <p>Delivery Fee : Free</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- item 5 -->
+        <div class="card flex flex-col md:flex-row items-center text-center border-slate-500">
+          <div class="mb-3">
+            <figure class="px-10 py-10">
+              <img src="Images/9.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+          </div>
+          <div class="items-start text-start p-4">
+            <div class="flex">
+              <img src="Images/star-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4">5.0</p>
+              <img src="Images/eye-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4">20</p>
+              <img src="Images/heart-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4 mb-3">200</p>
+
+            </div>
+            <div class="items-start text-start mb-3">
+              <h2 class="card-title mb-3">World Cup Flags Football</h2>
+              <p class="mb-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 mb-3">
+              <p class="text-main-color font-extrabold">Price - $22.00</p>
+              <div class="flex gap-3"><img src="Images/cart-shopping-svgrepo-com.svg" alt="" class="w-6 h-6">
+              <p>Delivery Fee : Free</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- item 6 -->
+        <div class="card flex flex-col md:flex-row items-center text-center border-slate-500">
+          <div class="mb-3">
+            <figure class="px-10 py-10">
+              <img src="Images/10.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+          </div>
+          <div class="items-start text-start p-4">
+            <div class="flex">
+              <img src="Images/star-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4">5.0</p>
+              <img src="Images/eye-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4">20</p>
+              <img src="Images/heart-svgrepo-com.svg" alt="" class="w-6 h-6 mr-2">
+              <p class="mr-4 mb-3">200</p>
+
+            </div>
+            <div class="items-start text-start mb-3">
+              <h2 class="card-title mb-3">World Cup Flags Football</h2>
+              <p class="mb-3">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 mb-3">
+              <p class="text-main-color font-extrabold">Price - $22.00</p>
+              <div class="flex gap-3"><img src="Images/cart-shopping-svgrepo-com.svg" alt="" class="w-6 h-6">
+              <p>Delivery Fee : Free</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        </div>
+      </section>
+
+      <!-- clint question section -->
+      <section>
+        <div>
+          <hr style="border-top: dashed 1px;" class="mt-8 mb-6" />
+
+          <h1 class="font-manrope text-black text-2xl lg:text-4xl text-center mb-4 lg:mb-6">Clients Question</h1>
+          <h3 class="font-manrope text-sm lg:text-base text-center mb-12">Precision on the field, sticks dancing in
+            rhythm, our field hockey <br> club thrives on teamwork and excellence.</h3>
+          <hr style="border-top: dashed 1px;" class="mt-8 mb-12" />
+      </section>
+      <!-- clint question section 2 -->
+      <section>
+        
+      </section>
+
+
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
